@@ -17,12 +17,15 @@
    ============================================= */
 *, *::before, *::after { box-sizing: border-box; }
 
+img { max-width: 100%; height: auto; }
+
 body {
   background-color: var(--cream);
   color: var(--ink);
   font-family: 'DM Sans', sans-serif;
   font-weight: 300;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -254,6 +257,9 @@ section { padding: 4rem 0; }
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cv-label {
@@ -411,11 +417,11 @@ section { padding: 4rem 0; }
   }
 
   .project-row:first-child .project-image {
-    border-radius: 0 0 32px 32px;
+    border-radius: 0 0 0px 0px;
   }
 
   .project-row:last-child .project-image {
-    border-radius: 32px 32px 0 0;
+    border-radius: 0px 32px 0 0;
   }
 }
 
@@ -487,6 +493,12 @@ section { padding: 4rem 0; }
 .cta-floral {
   opacity: 0.15;
   width: 160px;
+}
+
+.flower {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 /* Fim: seção contato */
 
