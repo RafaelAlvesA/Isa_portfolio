@@ -819,6 +819,7 @@ section { padding: 4rem 0; }
 
 .sm-main-grid {
   margin-top: 1.5rem;
+  overflow: hidden;
 }
 
 /* Placeholder quadrado para posts de social media */
