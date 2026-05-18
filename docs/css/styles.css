@@ -822,6 +822,16 @@ section { padding: 4rem 0; }
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .sm-main-grid .row {
+    --bs-gutter-x: 0.5rem;
+    --bs-gutter-y: 0.5rem;
+  }
+  .sm-main-grid .mt-2 {
+    margin-top: 0.5rem !important;
+  }
+}
+
 /* Placeholder quadrado para posts de social media */
 .sm-ph {
   background: var(--tag-bg);
